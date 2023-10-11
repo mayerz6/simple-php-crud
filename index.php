@@ -1,12 +1,10 @@
-<?php
-    session_start();
-?>
+<?php session_start(); ?>
 <?php include('data.php');?>
 <?php include('server.php');?>
 
 <html>
     <head>
-        <title>This is a title</title>
+        <title>Barcode Developer Network | Basic PHP Crude WebApp</title>
         
         <link href='style.css' rel="stylesheet"/>
         <script src="scripts.js"></script>
@@ -35,6 +33,7 @@
 
             <h3 id="login_title">Login</h3>
             <form id="form_login" method="post" action=<?=$_SERVER['PHP_SELF'];?>>
+            <!-- <form id="form_login" method="post" action="server.php"> -->
                 <input type='text' name='user_name' id='user_name' placeholder='User name' />
                 <input type='password' name='user_password' id='user_password' placeholder='Enter password'/>
                 <input type='submit' name='login' id="login" value="Login" />
